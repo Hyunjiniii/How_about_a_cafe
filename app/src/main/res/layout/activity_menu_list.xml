@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
@@ -40,8 +39,8 @@
             android:id="@+id/expanded_menu"
             android:layout_width="match_parent"
             android:layout_height="450sp"
-            android:childDivider="@drawable/line"
-            android:divider="@drawable/line"
+            android:childDivider="#1F000000"
+            android:divider="#1F000000"
             android:dividerHeight="1dp"
             android:groupIndicator="@null" />
 
@@ -53,7 +52,7 @@
             android:background="@drawable/spinner"
             android:layout_margin="4sp"
             android:text="계산서"
-            android:textColor="#ffffff"
+            android:textColor="#000000"
             android:textStyle="bold" />
     </RelativeLayout>
 
