@@ -21,11 +21,11 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="메뉴와 가격은 매장마다 차이가 있을 수 있습니다."/>
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:text="메뉴와 가격은 매장마다 차이가 있을 수 있습니다."/>-->
 
     <FrameLayout
         android:layout_width="match_parent"
