@@ -1,62 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+  <android.support.v7.widget.Toolbar
+    android:id="@+id/mytoolbar"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    android:elevation="4dp">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/mytoolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp">
+    <ImageButton
+      android:id="@+id/favorite_button"
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:background="@null"
+      android:scaleType="fitXY"/>
 
-        <ImageButton
-            android:id="@+id/favorite_button"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:background="@null"
-            android:scaleType="fitXY" />
+    <TextView
+      android:layout_width="15dp"
+      android:layout_height="match_parent"/>
 
-        <TextView
-            android:layout_width="15dp"
-            android:layout_height="match_parent" />
+    <TextView
+      android:id="@+id/cafe_name_tittle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:text="카페이름"
+      android:textColor="#ffffff"
+      android:textSize="20sp"/>
+  </android.support.v7.widget.Toolbar>
 
-        <TextView
-            android:id="@+id/cafe_name_tittle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="카페이름"
-            android:textColor="#ffffff"
-            android:textSize="20sp" />
-    </android.support.v7.widget.Toolbar>
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <ExpandableListView
-            android:id="@+id/expanded_menu"
-            android:layout_width="match_parent"
-            android:layout_height="450sp"
-            android:childDivider="#1F000000"
-            android:divider="#1F000000"
-            android:dividerHeight="1dp"
-            android:groupIndicator="@null" />
+    <ExpandableListView
+      android:id="@+id/expanded_menu"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:childDivider="#1F000000"
+      android:divider="#1F000000"
+      android:dividerHeight="1dp"
+      android:groupIndicator="@null"/>
 
-        <Button
-            android:id="@+id/cal_btn"
-            android:layout_width="match_parent"
-            android:layout_height="50sp"
-            android:layout_alignParentBottom="true"
-            android:background="@drawable/spinner"
-            android:layout_margin="4sp"
-            android:text="계산서"
-            android:textColor="#000000"
-            android:textStyle="bold" />
-    </RelativeLayout>
-
-
+    <android.support.design.widget.FloatingActionButton
+      android:id="@+id/cal_btn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentEnd="true"
+      android:layout_margin="16dp"
+      android:background="@color/colorPrimary"
+      android:src="@drawable/ic_shopping_basket_black_24dp"
+      android:textStyle="bold"/>
+  </RelativeLayout>
 
 
 </LinearLayout>

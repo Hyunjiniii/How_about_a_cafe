@@ -1,24 +1,12 @@
 package com.example.user.how_about_a_cafe;
 
 import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.bumptech.glide.Glide;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -69,8 +57,8 @@ public class ExpandAdapter extends BaseExpandableListAdapter {
         childPrice.setText(DataList.get(groupPosition).childPrice.get(childPosition));
         TextView childName = (TextView) convertView.findViewById(R.id.childName);
         childName.setText(DataList.get(groupPosition).child.get(childPosition));
-        ImageView childImage = (ImageView) convertView.findViewById(R.id.childImage);
-        Glide.with(context).load(DataList.get(groupPosition).childImage.get(childPosition)).into(childImage);
+//        ImageView childImage = (ImageView) convertView.findViewById(R.id.childImage);
+//        Glide.with(context).load(DataList.get(groupPosition).childImage.get(childPosition)).into(childImage);
 
         return convertView;
     }

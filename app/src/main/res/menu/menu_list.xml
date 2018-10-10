@@ -4,14 +4,14 @@
 
     <item
         android:id="@+id/review_btn"
-        android:icon="@drawable/review"
+        android:icon="@drawable/ic_rate_review_black_24dp"
         android:title="reveiw"
         app:showAsAction="always"/>
 
     <item
         android:id="@+id/evnet"
-        android:icon="@drawable/event"
-        android:title="이벤트 알림 보기"
+        android:icon="@drawable/ic_card_giftcard_black_24dp"
+        android:title="event"
         app:showAsAction="always"/>
 
 </menu>
